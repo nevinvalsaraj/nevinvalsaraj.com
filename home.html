@@ -5,31 +5,26 @@ title: "Nevin Valsaraj | Home"
 <!DOCTYPE html>
 <html lang="en">
 
-    {% include head.html %}
+{% include head.html %}
 
-    <link href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl}}">
+<link href="{{ " /css/bootstrap.min.css " | prepend: site.baseurl }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ " /font-awesome/css/font-awesome.min.css " | prepend: site.baseurl}}">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-    body {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-    </style>
-</head>
 
 <body data-spy="scroll" data-target=".sidebar_nav">
-    <div id="wrap" class="container-fluid">
-        <div class="row">
-            <script type="text/javascript">
-            $('.collapse').collapse()
-            </script>
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="row container-fluid">
+
+        <script type="text/javascript">
+        $('.collapse').collapse();
+        </script>
+
+        <div class="row container-fluid">
+            <nav class="navbar navbar-inverse" role="navigation">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -150,21 +145,24 @@ title: "Nevin Valsaraj | Home"
                 </script>
             </div>
         </div>
-        <div class="row">
-            <nav class="navbar navbar-inverse navbar-fixed-bottom">
-                <div class="container-fluid">
-                    <span class="navbar-text">&copy; 2014 Nevin Valsaraj&trade;</span>
-                    <span class="hidden-xs">
-                        <a href="http://getbootstrap.com/" class="btn btn-success navbar-btn pull-right">Get Bootstrap  <i class="fa fa-cloud-download"></i></a>
-                    </span>
-                    <p class="navbar-text pull-right">Developed with <i class="fa fa-heart"></i> , <i class="fa fa-coffee"></i> and Bootstrap 3</p>
-                </div>
-            </nav>
-        </div>
+        <footer class="row navbar-inverse-bottom">
+            <div class="col-md-12">
+                <span class="navbar-text">&copy; 2014 Nevin Valsaraj&trade;</span>
+                <span class="hidden-xs">
+                    <a href="http://getbootstrap.com/" class="btn btn-success navbar-btn pull-right">Get Bootstrap  <i class="fa fa-cloud-download"></i></a>
+                </span>
+                <p class="navbar-text pull-right">Developed with <i class="fa fa-heart"></i> , <i class="fa fa-coffee"></i> and Bootstrap 3</p>
+            </div>
+        </footer>
     </div>
 </body>
-
-<script src="{{ "/js/jquery210.min.js" | prepend: site.baseurl }}"></script>
+<style type="text/css">
+    .navbar-inverse-bottom{
+        background-color: #222;
+        padding: 6px 22px 6px 22px;
+    }
+</style>
+<script src="{{ " /js/jquery210.min.js " | prepend: site.baseurl }}"></script>
 <script>
 $('li').click(function() {
     if (!$(this).hasClass('active')) {
