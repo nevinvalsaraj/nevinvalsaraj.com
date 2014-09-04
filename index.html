@@ -1,20 +1,83 @@
 ---
-layout: default
+author: "Nevin Valsaraj"
+title: "Nevin Valsaraj | Landing"
 ---
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+    {% include head.html %}
 
-  <h1>Posts</h1>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <link href="css/cover.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-</div>
+<body>
+
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+
+                    <div class="inner">
+                        <ul class="nav masthead-nav">
+                            <li><a href="https://github.com/routeaccess"><i class="fa fa-github fa-2x"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/routeaccess"><i class="fa fa-twitter fa-2x"></i></a>
+                            </li>
+                            <li><a href="https://facebook.com/nevin.valsaraj"><i class="fa fa-facebook fa-2x"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/+NevinValsaraj"><i class="fa fa-google-plus fa-2x"></i></a>
+                            </li>
+                            <li><a href="http://in.linkedin.com/pub/nevin-valsaraj/60/537/616/"><i class="fa fa-linkedin fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="alert alert-dismissable alert-danger">
+                    <button type="button" class="close" data-dismiss="alert"><i class="fa fa-trash-o"></i></button>
+                    <strong>Oh snap! I'm not fully set up yet.</strong>Check in on me later.
+                </div>
+
+                <div class="inner cover">
+                    <h1 class="cover-heading">Nevin Valsaraj</h1>
+                    <br>
+                    <i class="fa fa-quote-left fa-2x pull-left"></i>
+                    <i class="fa fa-quote-right fa-2x pull-right"></i>
+                    <br>
+                    <p class="lead">
+                        The less you reveal, the more people can wonder.
+                    </p>
+                    <br>
+                    <a href="home" class="btn btn-lg btn-success"><i class="fa fa-external-link"></i> Enter Website</a>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>&copy; 2014 <a href="#">routeaccess</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery210.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+</body>
+
+</html>
