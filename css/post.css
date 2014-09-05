@@ -46,3 +46,7 @@ a#guide-home:hover{
     font-size: 18px;
     font-weight: 300;
 }
+.post-item-details{
+    color: #999;
+    font-weight: 700;
+}

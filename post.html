@@ -38,13 +38,18 @@ title: "Nevin's Blog | Home"
     <div class="row">
         <div class="col-md-offset-2 col-md-8">
             {% for post in site.posts %}
-            <div class="row post-item well">
+            <div class="row post-item ">
                 <a class="post-item-title" href="{{ post.url | prepend: site.baseurl }}">
                     {{ post.title }}
                 </a>
                 <p class="post-item-excerpt">
                     {{ post.excerpt | remove: '<p>' | remove: '</p>p>' }}
                 </p>
+                <span class="post-item-details">
+                    {{ post.date | date: "%b %-d, %Y" | upcase }}
+                 |
+                     {{ post.author | upcase }}
+                 </span>
             </div>
             <hr>
             {% endfor %}
