@@ -9,6 +9,7 @@ title: "Nevin Valsaraj | Home"
 
 <link href="{{ " /css/bootstrap.min.css " | prepend: site.baseurl }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ " /font-awesome/css/font-awesome.min.css " | prepend: site.baseurl}}">
+<link rel="stylesheet" href="{{ " /css/home.css " | prepend: site.baseurl}}">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -16,7 +17,7 @@ title: "Nevin Valsaraj | Home"
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<body data-spy="scroll" data-target=".sidebar_nav">
+<body data-spy="scroll">
     <div class="row container-fluid">
 
         <script type="text/javascript">
@@ -24,7 +25,7 @@ title: "Nevin Valsaraj | Home"
         </script>
 
         <div class="row container-fluid">
-            <nav class="navbar navbar-inverse" role="navigation">
+            <nav class="navbar-inverse" role="navigation">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -82,7 +83,7 @@ title: "Nevin Valsaraj | Home"
                 <!-- /.container-fluid -->
             </nav>
         </div>
-        <div class="row container-fluid">
+        <div id="content" class="row container-fluid" data-target=".sidebar_nav">
             <div class="col-md-2 hidden-xs hidden-sm sidebar_nav">
                 <ul class="nav nav-pills nav-stacked" style="max-width = 300px; width = 100%; position: fixed; ">
                     <li class="active"><a href="#home"><i class="fa fa-home fa-2x"></i>  Home</a>
@@ -156,12 +157,7 @@ title: "Nevin Valsaraj | Home"
         </footer>
     </div>
 </body>
-<style type="text/css">
-    .navbar-inverse-bottom{
-        background-color: #222;
-        padding: 6px 22px 6px 22px;
-    }
-</style>
+
 <script src="{{ " /js/jquery210.min.js " | prepend: site.baseurl }}"></script>
 <script>
 $('li').click(function() {
