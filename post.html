@@ -1,6 +1,6 @@
 ---
 author: Nevin Valsaraj
-title: ""
+title: "Nevin's Blog | Home"
 ---
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ title: ""
         <div class="row">
             <div id="page-head" class="col-md-12 jumbotron text-center">
                 <h1 id="blog-title">
-                    Ghost
+                    Blog Title
                 </h1>
                 <h3 id="blog-description">
                     This is the blog description
@@ -37,14 +37,17 @@ title: ""
 
     <div class="row">
         <div class="col-md-offset-2 col-md-8">
+            {% for post in site.posts %}
             <div class="row post-item well">
-                <h2 class="post-item-title">This is a blog post heading</h2>
+                <a class="post-item-title" href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                </a>
                 <p class="post-item-excerpt">
-                    And this is the blog post excerpt
+                    {{ post.excerpt | remove: '<p>' | remove: '</p>p>' }}
                 </p>
             </div>
             <hr>
-
+            {% endfor %}
         </div>
     </div>
 

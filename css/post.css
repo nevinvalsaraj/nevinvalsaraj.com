@@ -31,8 +31,15 @@ a#guide-home:hover{
     color: #777;
 }
 .post-item-title{
+    color: #444;
     font-size: 35px;
     font-weight: 400;
+    transition: all .4s ease-out;
+}
+.post-item-title:hover{
+    color: #444;
+    /*text-decoration: none;*/
+    text-shadow: 1px 0px #aaa;
 }
 .post-item-excerpt{
     color: #777;
