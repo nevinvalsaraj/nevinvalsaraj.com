@@ -1,0 +1,41 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.well{
+    background-color: #f5f8fa;
+}
+.jumbotron{
+    background-color: #f5f8fa;
+}
+#page-head{
+    height: 350px;
+}
+a#guide-home{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    transition: all .4s ease-out;
+    border-radius: 3px;
+}
+a#guide-home:hover{
+    background: transparent;
+    color: black;
+    border: solid 1px black;
+}
+#blog-title{
+    font: bolder 80px;
+    font-weight: 700;
+}
+#blog-description{
+    color: #777;
+}
+.post-item-title{
+    font-size: 35px;
+    font-weight: 400;
+}
+.post-item-excerpt{
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+}
