@@ -19,9 +19,9 @@
     <![endif]-->
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div id="page-head" class="col-xs-12 well">
-                <a id="blog-title" href="{{ "/blog" | prepend: site.baseurl "}}">
+        <div id="header" class="row">
+            <div class="col-xs-12 well">
+                <a id="blog-title" href="{{ "/blog" | prepend: site.baseurl }}">
                     Blog Title
                 </a>
                 <h3 id="blog-description">
@@ -34,7 +34,7 @@
             Back to top
         </a>
 
-        <div class="row">
+        <div id="content" class="row">
             <div class="col-sm-offset-2 col-sm-8 col-xs-12">
                 <div class="row text-center">
                     <div class="col-xs-12">
@@ -55,6 +55,13 @@
                 <span class="post-details">
                     {{ page.date | date: "%b %-d, %Y" | upcase }}{% if page.author %} • {{ page.author | upcase }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
                 </span>
+            </div>
+        </div>
+
+        <div id="footer" class="row well">
+            <div class="col-xs-12 text-center">
+                <span class="text-muted">&copy;Nevin Valsaraj</span>
+                <span class="text-muted">: using Jekyll, Bootstrap & GitHub Pages</span>
             </div>
         </div>
     </div>
