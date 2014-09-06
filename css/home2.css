@@ -31,7 +31,9 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     /*text-align: center;*/
-    background: #fff;
+    color: white;
+    background: url(../resources/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .about-section {
@@ -45,7 +47,9 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    color: white;
+    background: url(../resources/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .contact-section {
@@ -72,4 +76,10 @@ of those sections to manage the look and feel of the site. */
 #footer .text-muted{
     padding-top: 15px;
     padding-bottom: 10px;
+}
+.navbar a{
+    color: white;
+}
+.navbar-default{
+    background-color: #eee
 }

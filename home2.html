@@ -28,7 +28,7 @@ title: "Nevin Valsaraj | Home"
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top navbar" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -79,14 +79,6 @@ title: "Nevin Valsaraj | Home"
                         <div class="page-scroll">
                             <a class="btn btn-lg btn-success" href="#about">About Me</a>
                         </div>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <div class="row alert alert-success text-center">
-                <div class="col-md-12">
-                    <p>Hey, weary internet traveller!</p>
                 </div>
             </div>
         </div>
@@ -175,6 +167,15 @@ title: "Nevin Valsaraj | Home"
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
+    </script>
+
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            if($(window).scrollTop() == 0)
+                $('.navbar').removeClass('navbar-default');
+            else
+                $('.navbar').addClass('navbar-default');
+        });
     </script>
 
 </body>
