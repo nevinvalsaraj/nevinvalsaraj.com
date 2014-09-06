@@ -1,5 +1,4 @@
 body{
-    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
 .well{
@@ -30,13 +29,13 @@ a#guide-home:hover{
 #blog-description{
     color: #777;
 }
-.post-item-title{
+a.post-item-title{
     color: #444;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 400;
     transition: all .4s ease-out;
 }
-.post-item-title:hover{
+a.post-item-title:hover{
     color: #444;
     /*text-decoration: none;*/
     text-shadow: 1px 0px #aaa;
