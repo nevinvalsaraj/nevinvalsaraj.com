@@ -7,8 +7,10 @@
 {% include head.html %}
 
 <link rel="stylesheet" href="{{ " /css/post.css " | prepend: site.baseurl}}">
+<script src="{{ " /js/jquery.easing.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/scrolling-nav.js " | prepend: site.baseurl }}"></script>
 
-<body>
+<body id="page-top">
     <div class="container-fluid">
         <div id="header" class="row">
             <div class="col-xs-12 well">
@@ -21,9 +23,11 @@
             </div>
         </div>
 
-        <a id="guide-home" class="btn btn-lg btn-success" href="#page-head">
-            Back to top
-        </a>
+        <div class="page-scroll">
+            <a id="guide-home" class="btn btn-lg btn-success" href="#page-top">
+                Back to top
+            </a>
+        </div>
 
         <div id="content" class="row">
             <div class="col-sm-offset-2 col-sm-8 col-xs-12">
