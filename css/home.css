@@ -24,7 +24,9 @@ html {
 }
 
 .well{
-    background-color: #f5f8fa;
+    /*background-color: #f5f8fa;*/
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
     border: none;
     margin-bottom: 0px;
 }
@@ -46,6 +48,9 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
+    background: url(../resources/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
 .services-section {
@@ -61,6 +66,8 @@ of those sections to manage the look and feel of the site. */
     height: 85%;
     padding-top: 150px;
     text-align: center;
+    background: url(../resources/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 a#guide-blog{
