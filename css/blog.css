@@ -3,6 +3,8 @@ body{
 }
 .well{
     background-color: #f5f8fa;
+    margin-bottom: 0px;
+    border: none;
 }
 .jumbotron{
     background-color: #f5f8fa;

@@ -4,6 +4,7 @@ body{
 .well{
     background-color: #f5f8fa;
     border: none;
+    margin-bottom: 0px;
 }
 a#guide-home{
     position: fixed;
