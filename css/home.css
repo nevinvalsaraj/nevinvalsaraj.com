@@ -85,9 +85,16 @@ a#guide-blog{
     padding-top: 15px;
     padding-bottom: 10px;
 }
-.navbar a{
+.navbar li a, .navbar a{
     color: white;
+    transition: all .4s ease-in-out;
 }
 .navbar-default{
     background-color: #eee
+}
+.navbar li a:hover{
+    color: black;
+}
+.navbar li:hover{
+    background-color: #bbb;
 }
