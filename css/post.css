@@ -46,9 +46,10 @@ a.post-title:hover{
     text-shadow: 1px 0px #aaa;
 }
 .post-content{
-    color: #777;
+    color: #333;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.6;
 }
 .post-details{
     color: #999;
