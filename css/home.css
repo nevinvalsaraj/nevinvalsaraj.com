@@ -57,7 +57,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .contact-section {
-    height: 100%;
+    height: 85%;
     padding-top: 150px;
     text-align: center;
 }
@@ -97,4 +97,7 @@ a#guide-blog{
 }
 .navbar li:hover{
     background-color: #bbb;
+}
+#footer-social-links li:hover{
+    border-bottom: solid 2px #555;
 }
