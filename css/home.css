@@ -26,6 +26,7 @@ html {
 .well{
     background-color: #f5f8fa;
     border: none;
+    margin-bottom: 0px;
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -90,7 +91,7 @@ a#guide-blog{
     transition: all .4s ease-in-out;
 }
 .navbar-default{
-    background-color: #eee
+    background-color: #eee;
 }
 .navbar li a:hover{
     color: black;
