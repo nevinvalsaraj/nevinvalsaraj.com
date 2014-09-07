@@ -1,11 +1,8 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Home page of Nevin Valsaraj hosted on GitHub Pages"
+title: "Nevin Valsaraj"
+description: "Website of Nevin Valsaraj hosted on GitHub Pages"
 baseurl: ""
 url: "http://routeaccess.github.io"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
