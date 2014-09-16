@@ -1,8 +1,15 @@
+---
+---
+
+$well-color: #f5f8fa;
+$title-color: #444;
+$content-color: #333;
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
 .well{
-    background-color: #f5f8fa;
+    background-color: $well-color;
     border: none;
     margin-bottom: 0px;
 }
@@ -19,13 +26,13 @@ a#guide-home:hover{
     border: solid 1px black;
 }
 .jumbotron{
-    background-color: #f5f8fa;
+    background-color: $well-color;
 }
 #blog-title{
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
-    color: #444;
+    color: $title-color;
 }
 #blog-description{
     font-size: 22px;
@@ -36,18 +43,18 @@ a#guide-home:hover{
     padding-bottom: 30px;
 }
 a.post-title{
-    color: #444;
+    color: $title-color;
     font-size: 44px;
     font-weight: 700;
     transition: all .4s ease-out;
 }
 a.post-title:hover{
-    color: #444;
+    color: $title-color;
     text-decoration: none;
     text-shadow: 1px 0px #aaa;
 }
 .post-content{
-    color: #333;
+    color: $content-color;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
