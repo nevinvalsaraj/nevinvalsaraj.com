@@ -16,6 +16,10 @@ sudo apt-get install atom
 
 As first impressions go, I wasn't mightily impressed by the UI - it is quite a shameless rip-off of my favourite text editor [Sublime Text 3](http://www.sublimetext.com/). Yes, the features are fantastic, the command palette, the multiple cursors, the package ecosystem, all wonderful - but that's already been done long back in _Sublime_.
 
+![Atom]({{ " /resources/posts/atom-screenshot.png " | prepend: site.baseurl }})
+
+![Sublime Text 3]({{ " /resources/posts/st3-screenshot.png " | prepend: site.baseurl }})
+
 Then I asked myself - why then, do we need _Atom_? Why would anyone go to the extent of building a whole new editor, accompanying package manager and ecosystem from ground up if only to implement tools that already exist in another?
 
 Enter Google search.
