@@ -8,3 +8,13 @@ url: "http://routeaccess.github.io"
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+
+# For jekyll-image-tag plugin
+image:
+    source: resources/posts
+    output: generated
+    presets:
+        post-inline-2:
+            attr:
+                class: post-img
+            width: 480
