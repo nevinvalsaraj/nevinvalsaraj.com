@@ -17,6 +17,9 @@ title: "Nevin's Blog | Home"
 
 <link rel="stylesheet" href="{{ " /css/blog.css " | prepend: site.baseurl}}">
 
+<script src="{{ " /js/scrolling-nav.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/jquery.easing.min.js " | prepend: site.baseurl }}"></script>
+
 </head>
 
 <body>
@@ -35,9 +38,11 @@ title: "Nevin's Blog | Home"
             </div>
         </div>
 
-        <a id="guide-home" class="btn btn-lg btn-success" href="#page-head">
-            Back to top
-        </a>
+        <div class="page-scroll hidden-xs">
+            <a id="guide-home" class="btn btn-lg btn-success" href="#page-head">
+                Back to top
+            </a>
+        </div>
 
         <div class="row">
             <div class="col-sm-offset-2 col-sm-8 col-xs-12">
