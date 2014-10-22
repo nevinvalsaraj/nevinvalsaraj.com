@@ -1,0 +1,82 @@
+---
+author: Nevin Valsaraj
+title: 404
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include head.html %}
+
+<!-- Redirect -->
+<!-- <meta http-equiv="refresh" content="5; url=/"> -->
+
+<meta property="og:title" content="Nevin Valsaraj | 404" />
+<meta property="og:description" content="Personal website & blog of Nevin Valsaraj" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://routeaccess.github.io/404.html" />
+<meta property="og:image" content="http://routeaccess.github.io/resources/nevin.png" />
+
+<link rel="stylesheet" href="{{ " /css/404.css " | prepend: site.baseurl}}">
+
+<script src="{{ " /js/scrolling-nav.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/jquery.easing.min.js " | prepend: site.baseurl }}"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="page-head" class="col-xs-12 jumbotron text-center">
+                <h3 class="blog-description">
+                    Sorry Dude!
+                </h3>
+                <h1 id="blog-title">
+                    Error 404
+                </h1>
+                <h3 class="blog-description">
+                    ... means I can't find it.
+                </h3>
+            </div>
+        </div>
+
+        <a id="guide-home" class="btn btn-lg btn-success" href="{{ "/" | prepend: site.baseurl }}">
+            Home Page
+        </a>
+
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+                <p>
+                    Other links :
+                </p>
+                <hr>
+
+                <div class="row post-item ">
+                    <div class="col-xs-12">
+                        <a class="post-item-title" href="{{ "/blog.html" | prepend: site.baseurl }}">
+                            <!-- {{ post.title }} -->
+                            Blog
+                        </a>
+                        <p class="post-item-excerpt">
+                            <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
+                        </p>
+                        <span class="post-item-details">
+                            <!-- {{ post.date | date: "%b %-d, %Y" | upcase }}
+                         |
+                             {{ post.author | upcase }} -->
+                        </span>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+        <div id="footer" class="row well">
+            <div class="col-xs-12 text-center">
+                <span class="text-muted">&copy;Nevin Valsaraj</span>
+                <span class="text-muted">: using Jekyll, Bootstrap & GitHub Pages</span>
+            </div>
+        </div>
+    </div>
+</body>

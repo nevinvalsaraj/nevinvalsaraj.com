@@ -1,0 +1,65 @@
+---
+---
+
+$well-color: #d9534f;
+$blog-title-color: #333;
+$post-title-color: #444;
+$post-excerpt-color: #777;
+$post-details-color: #999;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.well{
+    // background-color: $well-color;
+    margin-bottom: 0px;
+    border: none;
+}
+.jumbotron{
+    background-color: $well-color;
+}
+#page-head{
+    height: 350px;
+}
+a#guide-home{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    transition: all .4s ease-out;
+    border-radius: 3px;
+    background-color: #d13e29;
+    border: solid 1px #d13e29;
+}
+a#guide-home:hover{
+    background: transparent;
+    color: black;
+    border: solid 1px black;
+}
+#blog-title{
+    color: $blog-title-color;
+    font: bolder 80px;
+    font-weight: 700;
+}
+.blog-description{
+    color: $blog-title-color;
+}
+a.post-item-title{
+    color: $post-title-color;
+    font-size: 32px;
+    font-weight: 400;
+    transition: all .4s ease-out;
+}
+a.post-item-title:hover{
+    color: $post-title-color;
+    /*text-decoration: none;*/
+    text-shadow: 1px 0px #aaa;
+}
+.post-item-excerpt{
+    color: $post-excerpt-color;
+    font-size: 18px;
+    font-weight: 300;
+}
+.post-item-details{
+    color: $post-details-color;
+    font-weight: 700;
+}
