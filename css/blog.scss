@@ -1,13 +1,22 @@
+---
+---
+
+$well-color: #f5f8fa;
+$title-color: #444;
+$content-color: #333;
+$excerpt-color: #777;
+$details-color: #999;
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
 .well{
-    background-color: #f5f8fa;
+    background-color: $well-color;
     margin-bottom: 0px;
     border: none;
 }
 .jumbotron{
-    background-color: #f5f8fa;
+    background-color: $well-color;
 }
 #page-head{
     height: 350px;
@@ -32,22 +41,22 @@ a#guide-home:hover{
     color: #777;
 }
 a.post-item-title{
-    color: #444;
+    color: $title-color;
     font-size: 32px;
     font-weight: 400;
     transition: all .4s ease-out;
 }
 a.post-item-title:hover{
-    color: #444;
+    color: $title-color;
     /*text-decoration: none;*/
     text-shadow: 1px 0px #aaa;
 }
 .post-item-excerpt{
-    color: #777;
+    color: $excerpt-color;
     font-size: 18px;
     font-weight: 300;
 }
 .post-item-details{
-    color: #999;
+    color: $details-color;
     font-weight: 700;
 }
