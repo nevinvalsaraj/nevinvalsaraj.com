@@ -23,6 +23,10 @@ title: "Nevin Valsaraj | Home"
 <!-- Custom Theme JavaScript -->
 <script src="{{ " /js/scrolling-nav.min.js " | prepend: site.baseurl }}"></script>
 
+<!-- Lightbox plugin -->
+<link href="{{ " /css/ekko-lightbox.min.css " | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+<script src="{{ " /js/ekko-lightbox.min.js " | prepend: site.baseurl }}"></script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -90,17 +94,17 @@ title: "Nevin Valsaraj | Home"
     <section id="about" class="about-section well">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 well">
+                <div class="col-lg-offset-2 col-lg-8 well">
                     <h1>About Me</h1>
                     <br>
                     <p>
-                        I speak many languages - English, Malayalam, C++, C, Python, Java, JavaScript, Shell-script, and a few of those exotic languages of the Web.
+                        I speak many languages - English, Malayalam, C++, C, Python, Java, JavaScript, Shell-script and a few of those exotic languages of the Web.
                         <br><br>
-                        I'm partial to <code>Linux</code>, the epitome of the power of open-source.
+                        I'm partial to Linux, the epitome of the power of open-source.
                         <br>
-                        <code>Git</code> version control and <code>Vim</code> joins the list.
+                        Git version control and Vim joins the list.
                         <br>
-                        (The reader can figure out that I was never able to master the all-powerful <code>Emacs</code>, whose mysterious nature I find strangely alluring).
+                        (The reader can figure out that I was never able to master the all-powerful Emacs, whose mysterious nature I find strangely alluring).
                         <br><br>
                         I'm an avid tinkerer.
                         <br>
@@ -109,11 +113,12 @@ title: "Nevin Valsaraj | Home"
                         <u>Currently working as:</u>
                         <br><br>Software Team Lead at <a target="_blank" href="http://auviitkgp.github.io">TeamAUV, IIT Kharagpur</a>
                         <br>
-                       &
                         <br>
                         Executive Editor at <a target="_blank" href="http://www.gymkhana.iitkgp.ernet.in/societies/tls/">TLS, IIT Kharagpur</a>
                         <br><br>
                         <u>Also worked as:</u>
+                        <br><br>
+                        Summer Intern at <a target="_blank" href="http://www.ti.com/">Texas Instruments India</a>
                         <br><br>
                         Head / Instructor at Winter Workshop on Image Processing<br>
                         (Certified by IEEE)
@@ -129,18 +134,26 @@ title: "Nevin Valsaraj | Home"
     <section id="services" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 well">
+                <div class="col-lg-offset-2 col-lg-8 well">
                     <h1><i class="fa fa-code"></i> Projects</h1>
                     <br>
                     <p>
+                        <h4>Nostradamus - Product Search & Recommendation Tool</h4>
+                        Online product search tool which can recommend products to the customers based on existing reviews and ratings of users by using web-crawling and semantic analysis, built using Apache Nutch, Apache Solr, Semantria sentiment analyzer API, Natural Language ToolKit (NLTK) and Bootstrap.
+                        <br><br>
+                        <h4>Plot-NMEA (Real-time GPS Plotter)</h4>
+                        Cross-platform desktop app to plot streaming GPS co-ordinates on a Google Map in real-time, built using NodeJS.
+                        <br><br>
                         <h4>Sign-Language Interpreter</h4>
-                        Used machine learning and image processing techniques to learn and identify sign-languages.
+                        Software to learn and interpret sign-languages using a combination of image processing and machine learning.
+                        <br>
+                        <a id="video_sli" href="https://www.youtube.com/watch?v=W0NENkezwWo">View Demo</a>
                         <br><br>
                         <h4>Auditorium Management Software</h4>
-                        Used JSP, MySQL and Bootstrap front-end framework to implement kiosk-style sales and management of tickets.
+                        Software for kiosk-style sales and management of tickets, built using JSP, MySQL and Bootstrap.
                         <br><br>
                         <h4>Lane-follower Robot using Real-Time Image Processing</h4>
-                        Implemented real-time image processing using OpenCV library to build lane-follower robot using Arduino development board
+                        Arduino-based lane-follower robot, implemented using real-time image processing using OpenCV.
                     </p>
                     <br><br>
 
@@ -229,6 +242,13 @@ title: "Nevin Valsaraj | Home"
                 $('.navbar').removeClass('navbar-inverse');
             else
                 $('.navbar').addClass('navbar-inverse');
+        });
+        $("#video_sli").on("click", function (e) {
+            $("#video_sli").ekkoLightbox({
+                type: "youtube",
+                always_show_close: false
+            });
+            e.preventDefault();
         });
     </script>
 
