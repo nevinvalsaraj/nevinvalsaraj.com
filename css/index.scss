@@ -11,17 +11,22 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
+a#guide-blog{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    transition: all .4s ease-out;
+    border-radius: 3px;
+}
+a#btn_aboutme{
+    transition: all .4s ease-out;
+    border-radius: 3px;
+}
 
-    .top-nav-collapse {
-        padding: 0;
-    }
+a#guide-blog:hover, a#btn_aboutme:hover{
+    background: transparent;
+    color: white;
+    border: solid 1px white;
 }
 
 .well{
@@ -32,41 +37,27 @@ html {
 }
 
 .intro-section {
-    height: 100%;
     padding-top: 150px;
-    color: white;
+    height: 100%;
     background: url(../resources/kbd.jpg) no-repeat center center fixed;
     background-size: cover;
+    color: white;
 }
 
 .about-section {
-    height: 100%;
     padding-top: 150px;
-    text-align: center;
     background: url(../resources/kbd.jpg) no-repeat center center fixed;
     background-size: cover;
-    color: white;
-}
-
-.services-section {
-    height: 100%;
-    padding-top: 150px;
     text-align: center;
     color: white;
-    background: url(../resources/kbd.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
 
-.contact-section {
+.projects-section {
     padding-top: 150px;
-    text-align: center;
     background: url(../resources/kbd.jpg) no-repeat center center fixed;
     background-size: cover;
-}
-
-a#guide-blog{
-    transition: all .4s ease-out;
-    border-radius: 3px;
+    text-align: center;
+    color: white;
 }
 
 .intro-section > .alert{
@@ -81,8 +72,8 @@ a#guide-blog{
         padding-bottom: 12px;
     }
     ul li{
-        list-style-type: none;
         padding: 8px 16px 8px 16px;
+        list-style-type: none;
         display: inline;
     }
     .text-muted{
@@ -91,26 +82,10 @@ a#guide-blog{
     }
 }
 
-.navbar-default{
-    background-color: #eee;
-}
-
-.navbar{
-    li a, .navbar a{
-        color: white;
-        transition: all .4s ease-in-out;
-    }
-    li a:hover{
-        color: black;
-    }
-    li:hover{
-        background-color: #bbb;
-    }
-}
-
-.contact-section .container {
+.projects-section .container {
     padding-bottom: 50px;
 }
+
 #footer-social-links li:hover{
     border-bottom: solid 2px #555;
 }

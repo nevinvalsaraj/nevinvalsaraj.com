@@ -31,50 +31,16 @@ title: "Nevin Valsaraj | Home"
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top"><i class="fa fa-user"></i> Nevin Valsaraj</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#services"<i class="fa fa-code"></i> Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact"><i class="fa fa-envelope-o"></i> Comments</a>
-                    </li>
-                </ul>
-                <a target="_blank" id="guide-blog" class="navbar-right btn btn-lg btn-success" href="{{ "/blog.html" | prepend: site.baseurl }}">
-                    <i class="fa fa-external-link"></i>
-                    Go to Blog
-                </a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <a target="_blank" id="guide-blog" class="navbar-right btn btn-lg btn-success" href="{{ "/blog.html" | prepend: site.baseurl }}">
+        <i class="fa fa-external-link"></i>
+        Blog
+    </a>
 
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-offset-1 col-lg-3">
-                    <img src="{{" /resources/nevin.png " | prepend: site.baseurl }}" class="img-circle" height="220" alt="">
+                    <img src="{{" /resources/nevin.png " | prepend: site.baseurl }}" class="img-rounded" height="220" alt="">
                 </div>
                 <div class="col-lg-offset-1 col-lg-5 well">
                     <h2>Nevin Valsaraj</h2>
@@ -84,39 +50,37 @@ title: "Nevin Valsaraj | Home"
 
                         <br>
                         <div class="page-scroll">
-                            <a class="btn btn-lg btn-success" href="#about">About Me</a>
+                            <a id="btn_aboutme" class="btn btn-lg btn-success" href="#about">About Me</a>
                         </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section well">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-8 well">
                     <h1>About Me</h1>
                     <br>
                     <p>
-                        I speak many languages - English, Malayalam, C++, C, Python, Java, JavaScript, Shell-script and a few of those exotic languages of the Web.
-                        <br><br>
-                        I'm partial to Linux, the epitome of the power of open-source.
-                        <br>
-                        Git version control and Vim joins the list.
-                        <br>
-                        (The reader can figure out that I was never able to master the all-powerful Emacs, whose mysterious nature I find strangely alluring).
-                        <br><br>
                         I'm an avid tinkerer.
+                        <br><br>
+                        I speak many languages - English, Malayalam, C++, Python, JavaScript and a smattering of the other exotic languages found in the Realm of Computer Science.
+                        <br>
+                        I'm partial to Linux, holding whose hands I sailed unexplored high seas with the help of my laptop, my personal Cheshire Cat.
+                        <br>
+                        I'd love to introduce you to Git and Vim - my worthy companions on this journey.
                         <br>
                         Getting things to work gives me a high that few other things do.
                         <br><br>
-                        <u>Currently working as:</u>
-                        <br><br>Software Team Lead at <a target="_blank" href="http://auviitkgp.github.io">TeamAUV, IIT Kharagpur</a>
+                        <u>Current</u>
+                        <br><br>Software Team Lead at <a target="_blank" href="http://auviitkgp.github.io">Team AUV, IIT Kharagpur</a>
                         <br>
                         <br>
-                        Executive Editor at <a target="_blank" href="http://www.gymkhana.iitkgp.ernet.in/societies/tls/">TLS, IIT Kharagpur</a>
+                        Executive Editor at Technology Literary Society, IIT Kharagpur
                         <br><br>
-                        <u>Also worked as:</u>
+                        <u>Past</u>
                         <br><br>
                         Summer Intern at <a target="_blank" href="http://www.ti.com/">Texas Instruments India</a>
                         <br><br>
@@ -131,7 +95,7 @@ title: "Nevin Valsaraj | Home"
         </div>
     </section>
 
-    <section id="services" class="services-section">
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-8 well">
@@ -149,6 +113,11 @@ title: "Nevin Valsaraj | Home"
                         <br>
                         <a id="video_sli" href="https://www.youtube.com/watch?v=W0NENkezwWo">View Demo</a>
                         <br><br>
+                        <h4>Fellowship of Tasks</h4>
+                        Android application that lets you put up help requests on location-based tasks that's visible to people at that location.
+                        <br>
+                        <a id="video_fot" href="https://youtu.be/WVnwZFirfRA">View Demo</a>
+                        <br><br>
                         <h4>Auditorium Management Software</h4>
                         Software for kiosk-style sales and management of tickets, built using JSP, MySQL and Bootstrap.
                         <br><br>
@@ -157,47 +126,6 @@ title: "Nevin Valsaraj | Home"
                     </p>
                     <br><br>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="twitter-timeline" href="https://twitter.com/route_access" data-widget-id="444384031832961024">Tweets by @route_access</a>
-                    <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + "://platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, "script", "twitter-wjs");
-                    </script>
-                </div>
-                <div class="col-md-8 col-md-offset-1 well">
-                    <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                    var disqus_shortname = 'nevinvalsaraj'; // required: replace example with your forum shortname
-
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                        var dsq = document.createElement('script');
-                        dsq.type = 'text/javascript';
-                        dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-                    </noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                 </div>
             </div>
         </div>
@@ -224,27 +152,15 @@ title: "Nevin Valsaraj | Home"
     </div>
 
     <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'nevinvalsaraj'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
-
-    <script type="text/javascript">
-        $(window).scroll(function(){
-            if($(window).scrollTop() == 0)
-                $('.navbar').removeClass('navbar-inverse');
-            else
-                $('.navbar').addClass('navbar-inverse');
-        });
         $("#video_sli").on("click", function (e) {
             $("#video_sli").ekkoLightbox({
+                type: "youtube",
+                always_show_close: false
+            });
+            e.preventDefault();
+        });
+        $("#video_fot").on("click", function (e) {
+            $("#video_fot").ekkoLightbox({
                 type: "youtube",
                 always_show_close: false
             });
