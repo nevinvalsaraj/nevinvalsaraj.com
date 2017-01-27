@@ -8,3 +8,4 @@ url: "http://nevinvalsaraj.com"
 markdown: kramdown
 permalink: /blog/:title
 highlighter: rouge
+source: docs
