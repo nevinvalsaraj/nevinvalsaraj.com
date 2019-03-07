@@ -1,0 +1,17 @@
+.outerDiv {
+	background: lightseagreen;
+	margin-bottom: 1.45rem;
+}
+.innerDiv {
+	margin: 0 auto;
+	max-width: 960;
+	padding: 3.95rem 1.0875rem;
+}
+.h1 {
+	margin: 0;
+}
+.link {
+	color: black;
+	text-decoration: none;
+	font-size: 5.5rem;
+}

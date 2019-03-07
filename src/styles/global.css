@@ -618,3 +618,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Custom */
+a, a:visited{
+	color: inherit;
+}
