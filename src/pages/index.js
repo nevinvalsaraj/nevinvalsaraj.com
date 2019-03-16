@@ -9,6 +9,9 @@ const IndexPage = () => (
     <h1>
       ~ <Link to="projects">projects</Link>
     </h1>
+    <h1>
+      ~ <a href="https://github.com/nevinvalsaraj">github</a>
+    </h1>
   </div>
 )
 
