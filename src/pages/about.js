@@ -15,7 +15,7 @@ const About = () => (
       JavaScript frameworks.
     </p>
     <p>
-      This website is build with the wonderfully fast{' '}
+      This website is built using the wonderfully fast{' '}
       <a href="https://www.gatsbyjs.org/">GatsbyJS</a>.
     </p>
 
