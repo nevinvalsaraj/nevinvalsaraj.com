@@ -1,6 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: '~ / nevin valsaraj',
+    title: 'nevinvalsaraj.com',
+    description: 'Personal website of Nevin Valsaraj',
+    author: {
+      name: 'Nevin Valsaraj',
+      social: {
+        github: 'nevinvalsaraj',
+        twitter: 'ilegitoergosum'
+      },
+    }
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }

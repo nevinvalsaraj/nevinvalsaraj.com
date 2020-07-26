@@ -2,15 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './header.module.css'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div className={styles.outerDiv}>
-    <div className={styles.innerDiv}>
-      <h1 className={styles.h1}>
+      <h1>
         <Link to="/" className={styles.link}>
-          {siteTitle}
+          ~ / nevin valsaraj
         </Link>
       </h1>
-    </div>
   </div>
 )
 

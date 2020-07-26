@@ -11,15 +11,20 @@ const Layout = ({ children }) => (
         query LayoutQuery {
           site {
             siteMetadata {
-              title
+              title,
+              description
             }
           }
         }
       `}
     render={data => (
       <>
-        <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title}>
+          <meta charSet="utf-8" />
+          <title>~</title>
+          <meta name="description" content={data.site.siteMetadata.description} />
+        </Helmet>
+        <Header />
         <div style={{
           margin: '0 auto',
           maxWidth: 960,

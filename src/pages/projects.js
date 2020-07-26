@@ -2,10 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Layout from '../components/layout'
 import ProjectListItem from '../components/ProjectListItem'
+import { Helmet } from 'react-helmet'
 
 
 const ProjectsPage = () => (
   <Layout>
+    <Helmet>
+      <title>~/projects</title>
+    </Helmet>
     <div>
       <h1>Projects</h1>
       <hr />
