@@ -12,7 +12,7 @@ const IndexPage = () => (
         ~ <Link to="projects">projects</Link>
       </h1>
       <h1>
-        ~ <a href="https://github.com/nevinvalsaraj">github</a>
+        ~ <a href="https://github.com/nevinvalsaraj" target="_blank" rel="noreferrer">github</a>
       </h1>
     </div>
   </Layout>

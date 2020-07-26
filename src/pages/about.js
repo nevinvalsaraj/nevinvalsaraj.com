@@ -18,7 +18,7 @@ const About = () => (
     </p>
       <p>
         This website is built using the wonderfully fast{' '}
-        <a href="https://www.gatsbyjs.org/">GatsbyJS</a>.
+        <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer">GatsbyJS</a>.
     </p>
 
       <hr />

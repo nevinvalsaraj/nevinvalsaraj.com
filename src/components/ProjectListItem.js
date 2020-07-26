@@ -7,7 +7,7 @@ const ProjectListItem = ({ title, subtitle, description, links }) => (
     <p>{description}</p>
     {links.map(link => (
       <p key={link.title}>
-        <a href={link.target}>{link.title}</a>
+        <a href={link.target} target="_blank" rel="noreferrer">{link.title}</a>
       </p>
     ))}
   </div>
