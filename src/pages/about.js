@@ -8,7 +8,7 @@ const About = () => (
     <Helmet>
       <title>~/about</title>
     </Helmet>
-    <div className="aboutContainer">
+    <div className='aboutContainer'>
       <h1>About</h1>
       <p>Hello there!</p>
       <p>I'm a software engineer at Microsoft.</p>
@@ -23,11 +23,14 @@ const About = () => (
       </p>
       <p>
         This website is built using the wonderfully fast{' '}
-        <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer">GatsbyJS</a>.
+        <a href='https://www.gatsbyjs.org/' target='_blank' rel='noreferrer'>
+          GatsbyJS
+        </a>
+        .
       </p>
 
       <hr />
-      <Link to="/">Back to home</Link>
+      <Link to='/'>Back to home</Link>
     </div>
   </Layout>
 )
