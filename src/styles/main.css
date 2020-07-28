@@ -1,0 +1,17 @@
+.indexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutContainer {
+    text-align: center;
+}
+
+.projectsContainer {
+    text-align: center;
+}
+
+.notFoundContainer {
+    text-align: center;
+}

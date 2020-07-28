@@ -10,7 +10,7 @@ const ProjectsPage = () => (
     <Helmet>
       <title>~/projects</title>
     </Helmet>
-    <div>
+    <div className="projectsContainer">
       <h1>Projects</h1>
       <hr />
       <ProjectListItem

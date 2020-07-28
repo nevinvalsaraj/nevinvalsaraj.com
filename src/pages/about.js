@@ -8,7 +8,7 @@ const About = () => (
     <Helmet>
       <title>~/about</title>
     </Helmet>
-    <div>
+    <div className="aboutContainer">
       <h1>About</h1>
       <p>Hello there!</p>
       <p>I'm a software engineer at Microsoft.</p>
