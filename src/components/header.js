@@ -4,11 +4,11 @@ import styles from './header.module.css'
 
 const Header = () => (
   <div className={styles.outerDiv}>
-    <h1>
-      <Link to='/' className={styles.link}>
-        ~ / nevin valsaraj
-      </Link>
-    </h1>
+    <Link to='/' className={styles.siteHeader}>
+      <h1 className={styles.siteHeaderText}>~/&nbsp;</h1>
+      <h1 className={styles.siteHeaderText}>nevin&nbsp;</h1>
+      <h1 className={styles.siteHeaderText}>valsaraj</h1>
+    </Link>
   </div>
 )
 

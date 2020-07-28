@@ -11,14 +11,26 @@
   align-items: center;
   margin-bottom: 2rem;
 }
-.link {
-  color: black;
+
+.siteHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-decoration: none;
+}
+
+.siteHeaderText {
+  color: black;
   font-size: 6rem;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
-  .link {
-    font-size: 2rem;
+  .siteHeader {
+    flex-direction: column;
+  }
+
+  .siteHeaderText {
+    font-size: 4rem;
   }
 }
