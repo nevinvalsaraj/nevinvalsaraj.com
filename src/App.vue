@@ -1,26 +1,26 @@
 <template>
   <div id="app">
-    <Header />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Header
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;600&display=swap');
 
 #app {
   font-family: 'Proza Libre', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 </style>
