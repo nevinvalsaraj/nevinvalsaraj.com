@@ -46,4 +46,10 @@ export default {
 .about a {
   color: #333;
 }
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 90%;
+  }
+}
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="siteHeader">
     <ul>
+      <router-link to="/">
       <h1>~/&nbsp;</h1>
       <h1>nevin&nbsp;</h1>
       <h1>valsaraj</h1>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -31,23 +33,28 @@ export default {
   margin-bottom: 2rem;
 }
 
-.siteHeader > ul {
+.siteHeader a{
+  text-decoration: none;
+  color: #333;
   display: flex;
   flex-direction: row;
+}
+
+.siteHeader ul {
   padding: 0 0;
 }
 
-.siteHeader > ul > h1 {
+.siteHeader ul h1 {
   margin: 0 0;
   font-size: 7rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .siteHeader > ul {
+  .siteHeader a {
     flex-direction: column;
   }
 
-  .siteHeader > ul > h1 {
+  .siteHeader ul h1 {
     font-size: 4rem;
   }
 }
