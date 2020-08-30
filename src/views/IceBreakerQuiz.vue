@@ -1,7 +1,7 @@
 <template>
   <ProjectHeader name="Ice Breaker Quiz" route="/projects/icebreakerquiz" />
   <div class="celebrityQuiz">
-    <p class="description">Fun game to to get to know your group better!</p>
+    <p class="description">Fun game to get to know your group better!</p>
 
     <!-- Enter questions -->
     <div v-if="randomQuestionIndex < 0" class="readInput">
@@ -44,10 +44,28 @@ export default {
 
   methods: {
     computeNextPrompt: function () {
-      this.randomQuestionIndex = Math.floor(
-        Math.random() * this.questions.length
+      if (this.randomQuestionIndex == -1 || this.randomPlayerIndex == -1) {
+        this.randomQuestionIndex = Math.floor(
+          Math.random() * this.questions.length
+        );
+        this.randomPlayerIndex = Math.floor(
+          Math.random() * this.players.length
+        );
+        return;
+      }
+
+      let qIndex, pIndex;
+      do {
+        qIndex = Math.floor(Math.random() * this.questions.length);
+        pIndex = Math.floor(Math.random() * this.players.length);
+      } while (
+        // don't ask questions submitted by themselves
+        this.questions[this.randomQuestionIndex].askedBy === pIndex ||
+        // don't repeat players immediately
+        (pIndex === this.randomPlayerIndex && this.players.length > 1)
       );
-      this.randomPlayerIndex = Math.floor(Math.random() * this.players.length);
+      this.randomQuestionIndex = qIndex;
+      this.randomPlayerIndex = pIndex;
     },
 
     parseInput: function () {
