@@ -2,9 +2,9 @@
   <div class="siteHeader">
     <ul>
       <router-link to="/">
-      <h1>~/&nbsp;</h1>
-      <h1>nevin&nbsp;</h1>
-      <h1>valsaraj</h1>
+        <h1>~/&nbsp;</h1>
+        <h1>nevin&nbsp;</h1>
+        <h1>valsaraj</h1>
       </router-link>
     </ul>
   </div>
@@ -12,8 +12,8 @@
 
 <script>
 export default {
-  name: 'Header'
-}
+  name: "Header",
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -32,18 +32,15 @@ export default {
   align-items: center;
   margin-bottom: 2rem;
 }
-
-.siteHeader a{
+.siteHeader a {
   text-decoration: none;
   color: #333;
   display: flex;
   flex-direction: row;
 }
-
 .siteHeader ul {
   padding: 0 0;
 }
-
 .siteHeader ul h1 {
   margin: 0 0;
   font-size: 7rem;
@@ -53,10 +50,8 @@ export default {
   .siteHeader a {
     flex-direction: column;
   }
-
   .siteHeader ul h1 {
     font-size: 4rem;
   }
 }
-
 </style>

@@ -16,17 +16,31 @@ export default {
     title: String,
     subtitle: String,
     description: String,
-    links: Array
+    links: Array,
   },
 };
 </script>
 
 <style scoped>
 .projectListItem {
-  font-weight: 100;
+  font-weight: 400;
   color: #333;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.projectListItem * {
+  margin: 25px 0;
 }
 .projectListItem a {
-    color: #333;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectListItem {
+    font-size: 0.9rem;
+  }
+  .projectListItem * {
+    margin: 10px 0;
+  }
 }
 </style>

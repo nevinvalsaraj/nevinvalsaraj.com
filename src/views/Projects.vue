@@ -138,7 +138,6 @@ export default {
   border: none;
   height: 1px;
   width: 90%;
-  margin: 0 0;
 }
 .projects a {
   color: #333;
@@ -149,5 +148,4 @@ export default {
     width: 90%;
   }
 }
-
 </style>
