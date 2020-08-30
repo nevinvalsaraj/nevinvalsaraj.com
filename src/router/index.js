@@ -19,6 +19,10 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: () => import('../views/Projects.vue')
+  },{
+    path: '/projects/icebreakerquiz',
+    name: 'IceBreakerQuiz',
+    component: () => import('../views/IceBreakerQuiz.vue')
   }
 ]
 
