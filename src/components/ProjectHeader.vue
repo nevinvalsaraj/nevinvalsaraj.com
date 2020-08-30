@@ -1,10 +1,8 @@
 <template>
   <div class="projectHeader">
-    <ul>
-      <router-link to="route" v-for="word in projectName" :key="word">
-        <h1>{{ word }}</h1>
-      </router-link>
-    </ul>
+    <div class="headerText">
+      <h1 v-for="word in projectName" :key="word">{{ word }}</h1>
+    </div>
   </div>
 </template>
 
@@ -31,34 +29,31 @@ export default {
   background: linear-gradient(
     42deg,
     rgba(32, 223, 154, 1) 0%,
-    rgba(32, 178, 170, 1) 100%
+    rgb(32, 178, 142) 100%
   );
   min-height: 10rem;
   display: grid;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  padding: 20px;
 }
-.projectHeader a {
-  text-decoration: none;
-  color: #333;
-}
-.projectHeader ul {
-  padding: 0 0;
+.projectHeader .headerText {
   display: flex;
-  flex-direction: row;
 }
-.projectHeader ul h1 {
+.projectHeader h1 {
   margin: 0 0;
   font-size: 4rem;
+  color: #333;
 }
 
 @media only screen and (max-width: 600px) {
-  .projectHeader ul {
-    flex-direction: column;
-  }
-  .projectHeader ul h1 {
+  .projectHeader h1 {
     font-size: 3rem;
+  }
+  .projectHeader .headerText {
+    width: 80%;
+    flex-direction: column;
   }
 }
 </style>
