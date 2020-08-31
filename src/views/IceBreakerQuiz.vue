@@ -57,12 +57,10 @@ export default {
       let qIndex, pIndex;
       do {
         qIndex = Math.floor(Math.random() * this.questions.length);
-        pIndex = Math.floor(Math.random() * this.players.length);
+        pIndex = (this.randomPlayerIndex + 1) % this.players.length;
       } while (
         // don't ask questions submitted by themselves
-        this.questions[this.randomQuestionIndex].askedBy === pIndex ||
-        // don't repeat players immediately
-        (pIndex === this.randomPlayerIndex && this.players.length > 1)
+        this.questions[qIndex].askedBy === pIndex
       );
       this.randomQuestionIndex = qIndex;
       this.randomPlayerIndex = pIndex;
